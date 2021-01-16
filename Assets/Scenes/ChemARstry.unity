@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44300574, g: 0.49219483, b: 0.57192385, a: 1}
+  m_IndirectSpecularColor: {r: 0.44300598, g: 0.4921947, b: 0.5719239, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -211,7 +211,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 60, y: 30, z: 0}
 --- !u!224 &566835306 stripped
 RectTransform:
@@ -219,6 +219,69 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1947274363}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &584120196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 584120198}
+  - component: {fileID: 584120197}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &584120197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584120196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9c80476c38a4f76901a6c408e78cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementName: []
+  Textfield: {fileID: 0}
+  Atom: 
+  HydrogenPrefab: {fileID: 6316879379926423030, guid: 7829c99c31b830349979f63ec3ad6a94,
+    type: 3}
+  OxygenPrefab: {fileID: 3844714904481331631, guid: bd140f38efd00264bbc85ae34a61f622,
+    type: 3}
+  SodiumPrefab: {fileID: 8684108139656564012, guid: cc552551126b25940b41b038b640babd,
+    type: 3}
+  ChloridePrefab: {fileID: 8073011497913004426, guid: 99a44e1089a3f4b4d8c2d5a286657f09,
+    type: 3}
+  HydroxidePrefab: {fileID: 6680046780249556696, guid: 423d5cf529bb2f44497179ae99b64b2c,
+    type: 3}
+  HCLPrefab: {fileID: 8127162046792508187, guid: 48b5bddb0b5510a46b0f79c7f36c615d,
+    type: 3}
+  SodiumHydroxidePrefab: {fileID: 7206695132593950265, guid: f4b62dd77edf28b4a946ba7efb952851,
+    type: 3}
+  ManipulatorPrefab: {fileID: 1122865395318488, guid: 24556cd4924884d9aaa3d80135c8021d,
+    type: 3}
+  FirstPersonCamera: {fileID: 646831371}
+--- !u!4 &584120198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584120196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5711133, y: 0.8597003, z: 1.808025}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &627444556
 GameObject:
   m_ObjectHideFlags: 0
@@ -642,6 +705,24 @@ MonoBehaviour:
   - Chlorine
   - Argon
   Textfield: {fileID: 1882858929}
+  Atom: 
+  HydrogenPrefab: {fileID: 6316879379926423030, guid: 7829c99c31b830349979f63ec3ad6a94,
+    type: 3}
+  OxygenPrefab: {fileID: 3844714904481331631, guid: bd140f38efd00264bbc85ae34a61f622,
+    type: 3}
+  SodiumPrefab: {fileID: 8684108139656564012, guid: cc552551126b25940b41b038b640babd,
+    type: 3}
+  ChloridePrefab: {fileID: 8073011497913004426, guid: 99a44e1089a3f4b4d8c2d5a286657f09,
+    type: 3}
+  HydroxidePrefab: {fileID: 6680046780249556696, guid: 423d5cf529bb2f44497179ae99b64b2c,
+    type: 3}
+  HCLPrefab: {fileID: 8127162046792508187, guid: 48b5bddb0b5510a46b0f79c7f36c615d,
+    type: 3}
+  SodiumHydroxidePrefab: {fileID: 7206695132593950265, guid: f4b62dd77edf28b4a946ba7efb952851,
+    type: 3}
+  ManipulatorPrefab: {fileID: 1122865395318488, guid: 24556cd4924884d9aaa3d80135c8021d,
+    type: 3}
+  FirstPersonCamera: {fileID: 646831371}
 --- !u!114 &835575575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,7 +849,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1521940042
 PrefabInstance:
@@ -1081,54 +1162,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf498fc35b538884db557f7a9a2c0ef9, type: 3}
---- !u!1 &1812720041
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1812720043}
-  - component: {fileID: 1812720042}
-  m_Layer: 0
-  m_Name: Pawn Generator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1812720042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812720041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cde3903c79dee45ccb64c95e1265efcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FirstPersonCamera: {fileID: 646831371}
-  PawnPrefab: {fileID: 919132149155446097, guid: a4cea38ecfc18bf48a705213680253b8,
-    type: 3}
-  ManipulatorPrefab: {fileID: 1122865395318488, guid: 24556cd4924884d9aaa3d80135c8021d,
-    type: 3}
---- !u!4 &1812720043
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812720041}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1882858927
 GameObject:
   m_ObjectHideFlags: 0
