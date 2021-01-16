@@ -250,6 +250,7 @@ GameObject:
   - component: {fileID: 4472350929151206165}
   - component: {fileID: 7381846220336375079}
   - component: {fileID: -7907411287609690946}
+  - component: {fileID: -2206361126092363804}
   m_Layer: 0
   m_Name: oxygen
   m_TagString: Oxygen
@@ -266,7 +267,7 @@ Transform:
   m_GameObject: {fileID: 3844714904481331631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.8470745, y: -1.0245285, z: 2.4137063}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 7480725672128102295}
   - {fileID: 6702486461633315827}
@@ -300,6 +301,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hydroxide: {fileID: 162883243236412935, guid: 423d5cf529bb2f44497179ae99b64b2c,
     type: 3}
+--- !u!135 &-2206361126092363804
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3844714904481331631}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6438091373796238534
 GameObject:
   m_ObjectHideFlags: 0

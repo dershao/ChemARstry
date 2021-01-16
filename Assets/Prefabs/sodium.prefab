@@ -407,6 +407,7 @@ GameObject:
   - component: {fileID: 8345160193209702294}
   - component: {fileID: -6696407800960508247}
   - component: {fileID: 1029182283530485846}
+  - component: {fileID: -7024728827207132408}
   m_Layer: 0
   m_Name: sodium
   m_TagString: Sodium
@@ -423,7 +424,7 @@ Transform:
   m_GameObject: {fileID: 8684108139656564012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.6082325, y: -4.97414, z: 3.031304}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.55, z: 0.5}
   m_Children:
   - {fileID: 6821650552212040462}
   - {fileID: 8186481336451772856}
@@ -461,6 +462,19 @@ MonoBehaviour:
     type: 3}
   sodiumChloride: {fileID: 6012389500121432823, guid: 02df7a2f6a7b2344ab6ad7696508fa75,
     type: 3}
+--- !u!135 &-7024728827207132408
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8684108139656564012}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9106438696837707756
 GameObject:
   m_ObjectHideFlags: 0

@@ -3376,6 +3376,7 @@ GameObject:
   - component: {fileID: 6340957825446190178}
   - component: {fileID: 162883243236412935}
   - component: {fileID: -3907343889251783345}
+  - component: {fileID: -8021030177051928159}
   m_Layer: 0
   m_Name: hydroxide
   m_TagString: Hydroxide
@@ -3428,6 +3429,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   h2o: {fileID: 3312831316737873695, guid: 9e505132c9f00f04a9d9c5119bd7d3e5, type: 3}
+--- !u!135 &-8021030177051928159
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6680046780249556696}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6699705567653112276
 GameObject:
   m_ObjectHideFlags: 0
