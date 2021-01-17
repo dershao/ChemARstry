@@ -88,9 +88,9 @@ namespace GoogleARCore.Examples.ObjectManipulation
                 case AtomConstants.OXYGEN:
                     return Instantiate(OxygenPrefab, hit.Pose.position, hit.Pose.rotation);
                 case AtomConstants.SODIUM:
-                    return Instantiate(ChloridePrefab, hit.Pose.position, hit.Pose.rotation);
-                case AtomConstants.CHLORIDE:
                     return Instantiate(SodiumPrefab, hit.Pose.position, hit.Pose.rotation);
+                case AtomConstants.CHLORIDE:
+                    return Instantiate(ChloridePrefab, hit.Pose.position, hit.Pose.rotation);
                 default:
                     return null;
             }
