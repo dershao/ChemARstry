@@ -1828,6 +1828,7 @@ GameObject:
   - component: {fileID: 2517081796163017749}
   - component: {fileID: 3312831316737873695}
   - component: {fileID: -9149840654127517928}
+  - component: {fileID: 69068653413424010}
   m_Layer: 0
   m_Name: dihydrogen_monoxide
   m_TagString: H2O
@@ -1844,7 +1845,7 @@ Transform:
   m_GameObject: {fileID: 3000989591237183151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.8342462, y: -1.3684473, z: 3.0099077}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 8876141501638443159}
   - {fileID: 5412667295215908421}
@@ -1880,6 +1881,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &69068653413424010
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000989591237183151}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3020720948555393443
 GameObject:
   m_ObjectHideFlags: 0

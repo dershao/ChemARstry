@@ -20,7 +20,7 @@ namespace GoogleARCore.Examples.ObjectManipulation
 {
     public class Sidebar : Manipulator
     {
-        [SerializeField] string[] elementName = null;
+        string[] elementName = { AtomConstants.HYDROGEN, AtomConstants.OXYGEN, AtomConstants.CHLORIDE, AtomConstants.SODIUM };
 
         public Text Textfield;
         public string atom;
@@ -78,10 +78,10 @@ namespace GoogleARCore.Examples.ObjectManipulation
         }
 
         // Update is called once per frame
-        void Update()
-        {
+        //void Update()
+        //{
 
-        }
+        //}
 
         GameObject CreateAtomPrefab(string molecule, TrackableHit hit) 
         {
@@ -90,8 +90,13 @@ namespace GoogleARCore.Examples.ObjectManipulation
             switch(molecule)
             {
                 case AtomConstants.HYDROGEN:
-                    
                     return Instantiate(HydrogenPrefab, hit.Pose.position, hit.Pose.rotation);
+                case AtomConstants.OXYGEN:
+                    return Instantiate(OxygenPrefab, hit.Pose.position, hit.Pose.rotation);
+                case AtomConstants.SODIUM:
+                    return Instantiate(SodiumPrefab, hit.Pose.position, hit.Pose.rotation);
+                case AtomConstants.CHLORIDE:
+                    return Instantiate(ChloridePrefab, hit.Pose.position, hit.Pose.rotation);
                 default:
                     return null;
             }

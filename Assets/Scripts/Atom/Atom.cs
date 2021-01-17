@@ -16,8 +16,8 @@ public class Atom : MonoBehaviour
     // Start is called before the first frame update
     protected void Start()
     {
-        maxHeight = transform.position.y + 0.6f;
-        minHeight = transform.position.y - 0.6f;
+        maxHeight = transform.position.y + 0.1f;
+        minHeight = transform.position.y - 0.1f;
 
         up = false;
     }
@@ -52,7 +52,7 @@ public class Atom : MonoBehaviour
         float distance_to_screen = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance_to_screen ));
         
-        maxHeight = transform.position.y + 1;
-        minHeight = transform.position.y - 1;
+        maxHeight = transform.position.y + 0.1f;
+        minHeight = transform.position.y - 0.1f;
     }
 }
