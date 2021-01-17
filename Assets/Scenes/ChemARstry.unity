@@ -248,9 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9c80476c38a4f76901a6c408e78cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementName: []
   Textfield: {fileID: 0}
-  Atom: 
+  atom: 
   HydrogenPrefab: {fileID: 6316879379926423030, guid: 7829c99c31b830349979f63ec3ad6a94,
     type: 3}
   OxygenPrefab: {fileID: 3844714904481331631, guid: bd140f38efd00264bbc85ae34a61f622,
@@ -430,7 +429,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &627916103
 MonoBehaviour:
@@ -698,14 +697,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9c80476c38a4f76901a6c408e78cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementName:
-  - Hydrogen
-  - Oxygen
-  - Sodium
-  - Chlorine
-  - Argon
   Textfield: {fileID: 1882858929}
-  Atom: 
+  atom: 
   HydrogenPrefab: {fileID: 6316879379926423030, guid: 7829c99c31b830349979f63ec3ad6a94,
     type: 3}
   OxygenPrefab: {fileID: 3844714904481331631, guid: bd140f38efd00264bbc85ae34a61f622,
@@ -1249,7 +1242,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4430574757597842, guid: c539aa4fa1bac4b4da61761b0699b48b, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4430574757597842, guid: c539aa4fa1bac4b4da61761b0699b48b, type: 3}
       propertyPath: m_LocalPosition.x

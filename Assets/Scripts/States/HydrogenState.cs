@@ -9,21 +9,22 @@ public class HydrogenState : AtomState
 
     public MonoBehaviour h2o;
 
-    protected override bool MakeStateChange(Collider other)
+    protected override MonoBehaviour MakeStateChange(Collider other)
     {           
+        MonoBehaviour atom;
         switch(other.tag)
         {
             case AtomConstants.OXYGEN:
-                Instantiate(hydroxide, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-                return true;
+                atom = Instantiate(hydroxide, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                return atom;
             case AtomConstants.HYDROXIDE:
-                Instantiate(h2o, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-                return true;
+                atom = Instantiate(h2o, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                return atom;
             case AtomConstants.CHLORIDE:
-                Instantiate(hydrochloride, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-                return true;
+                atom = Instantiate(hydrochloride, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                return atom;
             default:
-                return false;
+                return null;
         }
     }
 }

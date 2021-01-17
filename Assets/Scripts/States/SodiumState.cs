@@ -7,18 +7,19 @@ public class SodiumState : AtomState
     public MonoBehaviour sodiumHydroxide;
 
     public MonoBehaviour sodiumChloride;
-    protected override bool MakeStateChange(Collider other)
+    protected override MonoBehaviour MakeStateChange(Collider other)
     {           
+        MonoBehaviour atom;
         switch(other.tag)
         {
             case AtomConstants.HYDROXIDE:
-                Instantiate(sodiumHydroxide, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-                return true;
+                atom = Instantiate(sodiumHydroxide, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                return atom;
             case AtomConstants.CHLORIDE:
-                Instantiate(sodiumChloride, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-                return true;
+                atom = Instantiate(sodiumChloride, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+                return atom;
             default:
-                return false;
+                return null;
         }
     }
 }

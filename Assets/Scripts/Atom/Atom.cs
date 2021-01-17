@@ -17,8 +17,6 @@ public class Atom : Manipulator
     // name of this atom
     protected string atomName;
 
-    public Text TextField;
-
     protected void Start()
     {
         maxHeight = transform.position.y + 0.1f;
@@ -52,31 +50,19 @@ public class Atom : Manipulator
     }
 
 
+    protected void Update()
+    {
+        oscillate(maxHeight, minHeight);
+    }
+
     void OnMouseDrag()
     {
         // move atom around with mouse
         float distance_to_screen = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
         transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance_to_screen));
 
-        maxHeight = transform.position.y + 1;
-        minHeight = transform.position.y - 1;
-
-        TextField.text = "dragging";
-    }
-
-    protected override void OnEndManipulation(DragGesture gesture)
-    {
-        TextField.text = "OnEndManipulation";
-    }
-
-    protected override void OnContinueManipulation(DragGesture gesture)
-    {
-        TextField.text = "OnContinueManipulation";
-
-    }
-    protected override void OnStartManipulation(DragGesture gesture)
-    {
-        TextField.text = "OnStartManipulation";
+        maxHeight = transform.position.y + 0.1f;
+        minHeight = transform.position.y - 0.1f;
 
     }
 }

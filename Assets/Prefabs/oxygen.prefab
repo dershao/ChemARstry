@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 7381846220336375079}
   - component: {fileID: -7907411287609690946}
   - component: {fileID: -2206361126092363804}
+  - component: {fileID: 6120813496191903504}
   m_Layer: 0
   m_Name: oxygen
   m_TagString: Oxygen
@@ -299,6 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 636b144054fe0ce4c9f9bfe15795bfb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ManipulatorPrefab: {fileID: 1122865395318488, guid: 24556cd4924884d9aaa3d80135c8021d,
+    type: 3}
   hydroxide: {fileID: 162883243236412935, guid: 423d5cf529bb2f44497179ae99b64b2c,
     type: 3}
 --- !u!135 &-2206361126092363804
@@ -314,6 +317,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6120813496191903504
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3844714904481331631}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &6438091373796238534
 GameObject:
   m_ObjectHideFlags: 0

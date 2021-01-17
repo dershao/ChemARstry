@@ -2,30 +2,54 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using GoogleARCore.Examples.ObjectManipulation;
+using GoogleARCore.Examples.ObjectManipulationInternal;
+using GoogleARCore;
 
-public abstract class AtomState : MonoBehaviour
+public abstract class AtomState : Manipulator
 {
-    public Text TxtFieldDebug;
 
     // boolean if this atom is being selected
     protected bool selected;
 
-    protected abstract bool MakeStateChange(Collider other); 
+    public GameObject ManipulatorPrefab;
 
-    protected bool ChangeStates(Collider other)
+    protected abstract MonoBehaviour MakeStateChange(Collider other); 
+
+    protected MonoBehaviour ChangeStates(Collider other)
     {
 
+        TrackableHit hit;
+        TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon;
         if (selected) {
+
+            MonoBehaviour createdAtom = MakeStateChange(other);
+
+
+            if (Frame.Raycast(
+                createdAtom.transform.position.x, createdAtom.transform.position.y, raycastFilter, out hit))
+            {
+
             
-            return MakeStateChange(other);
+                var manipulator = Instantiate(ManipulatorPrefab, hit.Pose.position, hit.Pose.rotation);
+                createdAtom.transform.parent = manipulator.transform;
+
+                var anchor = hit.Trackable.CreateAnchor(hit.Pose);
+
+                manipulator.transform.parent = anchor.transform;
+                manipulator.GetComponent<Manipulator>().Select();
+            }
+
+            return createdAtom;
         }
 
-        return false;
+        return null;
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (ChangeStates(other))
+        Debug.Log("Colliding");
+        if (ChangeStates(other) != null)
         {
             Destroy(this.gameObject);
             Destroy(other.gameObject);
@@ -34,16 +58,14 @@ public abstract class AtomState : MonoBehaviour
 
     void OnMouseDown()
     {
-        // Debug.Log("on moused down");
+        Debug.Log("on moused down");
         selected = true;
-        TxtFieldDebug.text = "onMouseDOwn";
     }
 
     void OnMouseUp() 
     {
-        // Debug.Log("on mouse up");
+        Debug.Log("on mouse up");
         selected = false;
-        TxtFieldDebug.text = "onMouseup";
     }
 }
 
