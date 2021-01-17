@@ -5,8 +5,8 @@ using UnityEngine;
 public class HydrogenFactory : IAtomFactory
 {
     public Hydrogen prefab;
-    public override Atom GetInstance() {
+    //public override Atom GetInstance() {
 
-        return Instantiate(prefab);
-    }
+    //    return Instantiate(prefab);
+    //}
 }

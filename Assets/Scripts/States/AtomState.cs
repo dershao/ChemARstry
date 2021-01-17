@@ -1,8 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 public abstract class AtomState : MonoBehaviour
 {
+    public Text TxtFieldDebug;
 
     // boolean if this atom is being selected
     protected bool selected;
@@ -33,12 +36,14 @@ public abstract class AtomState : MonoBehaviour
     {
         // Debug.Log("on moused down");
         selected = true;
+        TxtFieldDebug.text = "onMouseDOwn";
     }
 
     void OnMouseUp() 
     {
         // Debug.Log("on mouse up");
         selected = false;
+        TxtFieldDebug.text = "onMouseup";
     }
 }
 

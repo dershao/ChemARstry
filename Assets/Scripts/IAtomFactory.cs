@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class IAtomFactory : MonoBehaviour
 {
-    public abstract Atom GetInstance();
+    //public abstract Atom GetInstance();
 }

@@ -287,6 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f2e7b842e107eb4781d5f3e9b1af2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextField: {fileID: 0}
 --- !u!114 &8609412675842763816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,6 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d431b214979a87408d561688c2c4127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TxtFieldDebug: {fileID: 0}
   hydroxide: {fileID: 162883243236412935, guid: 423d5cf529bb2f44497179ae99b64b2c,
     type: 3}
   hydrochloride: {fileID: 701991823094968764, guid: 48b5bddb0b5510a46b0f79c7f36c615d,
