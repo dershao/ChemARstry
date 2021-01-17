@@ -16,8 +16,8 @@ public class Atom : MonoBehaviour
     // Start is called before the first frame update
     protected void Start()
     {
-        maxHeight = transform.position.y + 0.6f;
-        minHeight = transform.position.y - 0.6f;
+        maxHeight = transform.position.y + 0.1f;
+        minHeight = transform.position.y - 0.1f;
 
         up = false;
     }
